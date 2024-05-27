@@ -1,0 +1,140 @@
+.leaderboard {
+    width: 90%;
+    /* height: 0%; */
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .board{
+    text-align: center;
+    color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  }
+  .leaderboard h1 {
+    margin-bottom: 20px;
+  }
+  .Backtest{
+    background: #414659;
+    display: flex;
+    flex-direction: column;
+    /* border: solid  ; */
+    padding: 10px;
+    /* padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+    border-radius: 10px; 
+    margin-bottom: 20px;
+  }
+  a {
+    color: #4c81af;
+    text-decoration: none;
+  }
+   a:hover{
+    text-decoration: none;
+  }
+  
+   .Backtest .Basic{
+    color: #ddd;
+    padding-top: 5px;
+    font-size: 1.2em;
+    text-align: left;
+   }
+  .Backtest .Slippage{
+    text-align:end ;
+     color: white;
+     margin-bottom: 10px;
+  }
+  .Backtest .Slippage label {
+    margin-right: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    
+  }
+  
+  th, td {
+    padding: 10px;
+    border: none;
+  }
+  
+  th {
+    background-color: #4c81af;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  @media (max-width: 690px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+  
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        position: relative;
+        text-align: left;
+    }
+  
+    td::before {
+      /* content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: calc(50% - 20px);
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold; */
+      content: attr(data-label);
+      font-weight: bold;
+    }
+  }
+  /* src/leaderboard.css */
+
+.Controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .SortOptions,
+  .FilterOptions {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .SortOptions label,
+  .FilterOptions label {
+    margin-right: 10px;
+  }
+  
+  .SortOptions select,
+  .FilterOptions select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
